@@ -5,7 +5,7 @@
 :loop
 echo ######### START APPLICATION %time:~-11,2%:%time:~-8,2%:%time:~-5,2%  - %date:~-4%-%date:~-7,2%-%date:~-10,2% #########
 echo %time:~-11,2%:%time:~-8,2%:%time:~-5,2% - start Profit Trailer
-start "ProfitTrailer" java -jar ProfitTrailer.jar -XX:+UseConcMarkSweepGC -Xmx512m -Xms512m
+start "ProfitTrailer" java -jar ProfitTrailer.jar -XX:+UseConcMarkSweepGC -Xmx756m -Xms756m
 
 :: First close Browser and than wait 60 seconds * 60 minutes * 4 houres = 10800 - first 25 timeout seconds = 10775
 timeout /t 25 >null
